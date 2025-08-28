@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-background">
@@ -7,7 +9,12 @@ export default function HomePage() {
           <div className="text-center space-y-12">
             <div className="space-y-6">
               <h1 className="font-mono text-6xl lg:text-8xl font-bold text-black tracking-tight">
-                89<span className="text-4xl text-gray-400">dev</span>
+                <img
+                  src="/89dev-logo.png"
+                  alt="Logo 89Dev"
+                  className="w-full h-auto max-w-3xs mx-auto mb-4"
+                />
+                <div className="sr-only">89Dev</div>
               </h1>
               <p className="text-xl lg:text-2xl text-muted-foreground font-medium max-w-2xl mx-auto text-balance leading-relaxed">
                 Tecnologia inteligente para impulsionar negócios
